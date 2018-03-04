@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1892D2DC204C46DB0037AE9F /* Navigation.png */; };
+		1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */; };
 		18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE042204C265E00EC792F /* AppDelegate.swift */; };
 		18ECE045204C265E00EC792F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE044204C265E00EC792F /* ViewController.swift */; };
 		18ECE048204C265E00EC792F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE046204C265E00EC792F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1892D2DC204C46DB0037AE9F /* Navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigation.png; sourceTree = "<group>"; };
+		1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		18ECE03F204C265E00EC792F /* ParkingSystemBugPACers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingSystemBugPACers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ECE042204C265E00EC792F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ECE044204C265E00EC792F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				18ECE042204C265E00EC792F /* AppDelegate.swift */,
 				18ECE044204C265E00EC792F /* ViewController.swift */,
 				18ECE065204C43DA00EC792F /* HomeScreenViewController.swift */,
+				1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */,
 				18ECE063204C411D00EC792F /* SideBarView.swift */,
 				18ECE046204C265E00EC792F /* Main.storyboard */,
 				18ECE049204C265E00EC792F /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */,
 				18ECE064204C411D00EC792F /* SideBarView.swift in Sources */,
 				18ECE066204C43DA00EC792F /* HomeScreenViewController.swift in Sources */,
 				18ECE045204C265E00EC792F /* ViewController.swift in Sources */,
