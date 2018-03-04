@@ -33,6 +33,12 @@ class LoginViewController: UIViewController {
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "recoveryView")
         self.present(newViewController, animated: true, completion: nil)
     }
+    
+    @IBAction func signIn(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "homeNavigate")
+        self.present(newViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
