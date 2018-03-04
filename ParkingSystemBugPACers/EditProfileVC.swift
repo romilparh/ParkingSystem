@@ -12,24 +12,22 @@ class EditProfileVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.addSubview(lbl)
+        lbl.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive=true
+        lbl.rightAnchor.constraint(equalTo: self.view.rightAnchor).isActive=true
+        lbl.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 100).isActive=true
+        lbl.heightAnchor.constraint(equalToConstant: 60).isActive=true
+        
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    let lbl: UILabel = {
+        let label=UILabel()
+        label.text = "Edit Profile"
+        label.textColor = UIColor.black
+        label.font = UIFont.systemFont(ofSize: 30)
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints=false
+        return label
+    }()
 }
