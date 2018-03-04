@@ -13,6 +13,8 @@
 		18ECE04A204C265E00EC792F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE049204C265E00EC792F /* Assets.xcassets */; };
 		18ECE04D204C265E00EC792F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE04B204C265E00EC792F /* LaunchScreen.storyboard */; };
 		18ECE056204C271000EC792F /* parking-ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE055204C271000EC792F /* parking-ticket.png */; };
+		18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE058204C29DF00EC792F /* BEYNO.otf */; };
+		18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE05A204C2B4600EC792F /* BEYNO.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		18ECE04C204C265E00EC792F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18ECE04E204C265E00EC792F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18ECE055204C271000EC792F /* parking-ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-ticket.png"; sourceTree = "<group>"; };
+		18ECE058204C29DF00EC792F /* BEYNO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.otf; sourceTree = "<group>"; };
+		18ECE05A204C2B4600EC792F /* BEYNO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		18ECE041204C265E00EC792F /* ParkingSystemBugPACers */ = {
 			isa = PBXGroup;
 			children = (
+				18ECE057204C29CF00EC792F /* Fonts */,
 				18ECE054204C26FB00EC792F /* Images */,
 				18ECE042204C265E00EC792F /* AppDelegate.swift */,
 				18ECE044204C265E00EC792F /* ViewController.swift */,
@@ -73,6 +78,15 @@
 				18ECE055204C271000EC792F /* parking-ticket.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		18ECE057204C29CF00EC792F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18ECE058204C29DF00EC792F /* BEYNO.otf */,
+				18ECE05A204C2B4600EC792F /* BEYNO.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */,
 				18ECE04D204C265E00EC792F /* LaunchScreen.storyboard in Resources */,
+				18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */,
 				18ECE04A204C265E00EC792F /* Assets.xcassets in Resources */,
 				18ECE056204C271000EC792F /* parking-ticket.png in Resources */,
 				18ECE048204C265E00EC792F /* Main.storyboard in Resources */,
