@@ -15,7 +15,6 @@
 		18ECE056204C271000EC792F /* parking-ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE055204C271000EC792F /* parking-ticket.png */; };
 		18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE058204C29DF00EC792F /* BEYNO.otf */; };
 		18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE05A204C2B4600EC792F /* BEYNO.ttf */; };
-		306AF4FE6AA5C33D67C94E53 /* Pods_ParkingSystemBugPACers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EF6D4E0936106CE99D8C9F /* Pods_ParkingSystemBugPACers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,21 +28,7 @@
 		18ECE055204C271000EC792F /* parking-ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-ticket.png"; sourceTree = "<group>"; };
 		18ECE058204C29DF00EC792F /* BEYNO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.otf; sourceTree = "<group>"; };
 		18ECE05A204C2B4600EC792F /* BEYNO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.ttf; sourceTree = "<group>"; };
-		2463B65E63A5387B5111A2E9 /* Pods-ParkingSystemBugPACers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingSystemBugPACers.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingSystemBugPACers/Pods-ParkingSystemBugPACers.release.xcconfig"; sourceTree = "<group>"; };
-		E9F650375C5779859E4D47D5 /* Pods-ParkingSystemBugPACers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParkingSystemBugPACers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParkingSystemBugPACers/Pods-ParkingSystemBugPACers.debug.xcconfig"; sourceTree = "<group>"; };
-		F3EF6D4E0936106CE99D8C9F /* Pods_ParkingSystemBugPACers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParkingSystemBugPACers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		18ECE03C204C265E00EC792F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				306AF4FE6AA5C33D67C94E53 /* Pods_ParkingSystemBugPACers.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		18ECE036204C265E00EC792F = {
@@ -51,8 +36,6 @@
 			children = (
 				18ECE041204C265E00EC792F /* ParkingSystemBugPACers */,
 				18ECE040204C265E00EC792F /* Products */,
-				F6CEB45D8B9C4ABEF615E9EB /* Pods */,
-				8C8CEB7F5DBB7A4206C4DFED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,23 +79,6 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		8C8CEB7F5DBB7A4206C4DFED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F3EF6D4E0936106CE99D8C9F /* Pods_ParkingSystemBugPACers.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F6CEB45D8B9C4ABEF615E9EB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E9F650375C5779859E4D47D5 /* Pods-ParkingSystemBugPACers.debug.xcconfig */,
-				2463B65E63A5387B5111A2E9 /* Pods-ParkingSystemBugPACers.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -120,12 +86,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18ECE051204C265E00EC792F /* Build configuration list for PBXNativeTarget "ParkingSystemBugPACers" */;
 			buildPhases = (
-				6B06BE7D37D089402FC8954D /* [CP] Check Pods Manifest.lock */,
 				18ECE03B204C265E00EC792F /* Sources */,
-				18ECE03C204C265E00EC792F /* Frameworks */,
 				18ECE03D204C265E00EC792F /* Resources */,
-				B0ABD2D81D4FFBA3D0FFD9F8 /* [CP] Embed Pods Frameworks */,
-				F08117792BF219F6F9B25E8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,57 +147,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6B06BE7D37D089402FC8954D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ParkingSystemBugPACers-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B0ABD2D81D4FFBA3D0FFD9F8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkingSystemBugPACers/Pods-ParkingSystemBugPACers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F08117792BF219F6F9B25E8C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParkingSystemBugPACers/Pods-ParkingSystemBugPACers-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18ECE03B204C265E00EC792F /* Sources */ = {
@@ -378,7 +289,6 @@
 		};
 		18ECE052204C265E00EC792F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9F650375C5779859E4D47D5 /* Pods-ParkingSystemBugPACers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -394,7 +304,6 @@
 		};
 		18ECE053204C265E00EC792F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2463B65E63A5387B5111A2E9 /* Pods-ParkingSystemBugPACers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
