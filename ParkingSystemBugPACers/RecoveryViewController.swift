@@ -9,7 +9,10 @@
 import UIKit
 
 class RecoveryViewController: UIViewController {
-
+    
+    let recoveryInteger: Int = 1000
+    var recoveryGrid: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +25,12 @@ class RecoveryViewController: UIViewController {
     }
     
 
+    @IBAction func recoverEMail(_ sender: UIButton) {
+        let randomNo: Int = Int(arc4random_uniform(8999))
+        print(randomNo)
+        self.recoveryGrid = recoveryInteger + randomNo
+        print(self.recoveryGrid)
+    }
     /*
     // MARK: - Navigation
 
