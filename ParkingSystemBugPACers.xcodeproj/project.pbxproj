@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1892D2DC204C46DB0037AE9F /* Navigation.png */; };
 		18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE042204C265E00EC792F /* AppDelegate.swift */; };
 		18ECE045204C265E00EC792F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE044204C265E00EC792F /* ViewController.swift */; };
 		18ECE048204C265E00EC792F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE046204C265E00EC792F /* Main.storyboard */; };
@@ -15,9 +16,12 @@
 		18ECE056204C271000EC792F /* parking-ticket.png in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE055204C271000EC792F /* parking-ticket.png */; };
 		18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE058204C29DF00EC792F /* BEYNO.otf */; };
 		18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE05A204C2B4600EC792F /* BEYNO.ttf */; };
+		18ECE064204C411D00EC792F /* SideBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE063204C411D00EC792F /* SideBarView.swift */; };
+		18ECE066204C43DA00EC792F /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE065204C43DA00EC792F /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1892D2DC204C46DB0037AE9F /* Navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigation.png; sourceTree = "<group>"; };
 		18ECE03F204C265E00EC792F /* ParkingSystemBugPACers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingSystemBugPACers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ECE042204C265E00EC792F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ECE044204C265E00EC792F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		18ECE055204C271000EC792F /* parking-ticket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parking-ticket.png"; sourceTree = "<group>"; };
 		18ECE058204C29DF00EC792F /* BEYNO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.otf; sourceTree = "<group>"; };
 		18ECE05A204C2B4600EC792F /* BEYNO.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.ttf; sourceTree = "<group>"; };
+		18ECE063204C411D00EC792F /* SideBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarView.swift; sourceTree = "<group>"; };
+		18ECE065204C43DA00EC792F /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -54,6 +60,8 @@
 				18ECE054204C26FB00EC792F /* Images */,
 				18ECE042204C265E00EC792F /* AppDelegate.swift */,
 				18ECE044204C265E00EC792F /* ViewController.swift */,
+				18ECE065204C43DA00EC792F /* HomeScreenViewController.swift */,
+				18ECE063204C411D00EC792F /* SideBarView.swift */,
 				18ECE046204C265E00EC792F /* Main.storyboard */,
 				18ECE049204C265E00EC792F /* Assets.xcassets */,
 				18ECE04B204C265E00EC792F /* LaunchScreen.storyboard */,
@@ -66,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				18ECE055204C271000EC792F /* parking-ticket.png */,
+				1892D2DC204C46DB0037AE9F /* Navigation.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -138,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */,
+				1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */,
 				18ECE04D204C265E00EC792F /* LaunchScreen.storyboard in Resources */,
 				18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */,
 				18ECE04A204C265E00EC792F /* Assets.xcassets in Resources */,
@@ -153,6 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18ECE064204C411D00EC792F /* SideBarView.swift in Sources */,
+				18ECE066204C43DA00EC792F /* HomeScreenViewController.swift in Sources */,
 				18ECE045204C265E00EC792F /* ViewController.swift in Sources */,
 				18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */,
 			);
