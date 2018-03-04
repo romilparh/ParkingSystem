@@ -22,6 +22,17 @@ class LoginViewController: UIViewController {
     }
     
 
+    @IBAction func signUp(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "signUp")
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func forgotPassword(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "recoveryView")
+        self.present(newViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
