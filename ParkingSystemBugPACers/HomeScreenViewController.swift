@@ -74,9 +74,16 @@ extension HomeScreenViewController: SidebarViewDelegate {
         case .location:
             print("Location")
         case .contact:
-            print("Contact")
+            let alertController = UIAlertController(
+                title: "Contact Us", message: "Developers: \nRomil: romilparhwal007@gmail.com \n\nGagandeep: gagandeepbrar0808@gmail.com \n\nJagdeep: jagdeep9417@gmail.com", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(
+                title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
         case .signOut:
-            print("Sign out")
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
+            self.present(newViewController, animated: true, completion: nil)
         case .none:
             break
             //        default:  //Default will never be executed
