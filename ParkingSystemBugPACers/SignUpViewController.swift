@@ -21,7 +21,12 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func loginPressed(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
