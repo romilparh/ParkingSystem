@@ -12,6 +12,9 @@
 		1892D2E3204C62080037AE9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E2204C62080037AE9F /* LoginViewController.swift */; };
 		1892D2E5204C62890037AE9F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E4204C62890037AE9F /* SignUpViewController.swift */; };
 		1892D2E7204C658E0037AE9F /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */; };
+		1892D2E9204C7DA80037AE9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E8204C7DA80037AE9F /* User.swift */; };
+		1892D2ED204CCFB60037AE9F /* CodeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2EC204CCFB60037AE9F /* CodeControllerViewController.swift */; };
+		1892D2EF204CD08D0037AE9F /* PasswordChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */; };
 		18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE042204C265E00EC792F /* AppDelegate.swift */; };
 		18ECE045204C265E00EC792F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE044204C265E00EC792F /* ViewController.swift */; };
 		18ECE048204C265E00EC792F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE046204C265E00EC792F /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 		1892D2E2204C62080037AE9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1892D2E4204C62890037AE9F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
+		1892D2E8204C7DA80037AE9F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1892D2EC204CCFB60037AE9F /* CodeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeControllerViewController.swift; sourceTree = "<group>"; };
+		1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeViewController.swift; sourceTree = "<group>"; };
 		18ECE03F204C265E00EC792F /* ParkingSystemBugPACers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingSystemBugPACers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ECE042204C265E00EC792F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ECE044204C265E00EC792F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +78,10 @@
 				1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */,
 				18ECE063204C411D00EC792F /* SideBarView.swift */,
 				18ECE046204C265E00EC792F /* Main.storyboard */,
+				1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */,
+				1892D2E8204C7DA80037AE9F /* User.swift */,
 				1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */,
+				1892D2EC204CCFB60037AE9F /* CodeControllerViewController.swift */,
 				1892D2E2204C62080037AE9F /* LoginViewController.swift */,
 				1892D2E4204C62890037AE9F /* SignUpViewController.swift */,
 				18ECE049204C265E00EC792F /* Assets.xcassets */,
@@ -180,7 +189,10 @@
 				1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */,
 				18ECE064204C411D00EC792F /* SideBarView.swift in Sources */,
 				18ECE066204C43DA00EC792F /* HomeScreenViewController.swift in Sources */,
+				1892D2E9204C7DA80037AE9F /* User.swift in Sources */,
 				1892D2E7204C658E0037AE9F /* RecoveryViewController.swift in Sources */,
+				1892D2ED204CCFB60037AE9F /* CodeControllerViewController.swift in Sources */,
+				1892D2EF204CD08D0037AE9F /* PasswordChangeViewController.swift in Sources */,
 				18ECE045204C265E00EC792F /* ViewController.swift in Sources */,
 				18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */,
 			);
