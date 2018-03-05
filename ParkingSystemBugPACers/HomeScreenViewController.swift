@@ -80,6 +80,9 @@ extension HomeScreenViewController: SidebarViewDelegate {
                 title: "OK", style: .default, handler: nil)
             alertController.addAction(defaultAction)
             present(alertController, animated: true, completion: nil)
+        case .instruction:
+            print("Instructions")
+            // Code here to fetch values from internet (instructions)
         case .signOut:
             let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
