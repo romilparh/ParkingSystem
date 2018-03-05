@@ -10,15 +10,12 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var fullName: UITextField!
+    @IBOutlet weak var eMailEntered: UITextField!
+    @IBOutlet weak var passwordEntered: UITextField!
+    var noUser: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func loginPressed(_ sender: UIButton) {
@@ -27,14 +24,39 @@ class SignUpViewController: UIViewController {
         self.present(newViewController, animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func signUp(_ sender: UIButton) {
+        let userInfoEntered = UserInfo()
+        for i in userDatabase{
+            if eMailEntered.text == i.eMail {
+                noUser = false
+            }
+        }
+        if(noUser == true){
+            let eMailCheck: Bool = userInfoEntered.addUser(fullName.text!, eMailEntered.text!, passwordEntered.text!)
+            if (eMailCheck == true){
+                userDatabase.append(userInfoEntered)
+                let alertController = UIAlertController(
+                    title: "Sign Up Successful", message: "You may now login", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(
+                    title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                present(alertController, animated: true, completion: nil)
+            }
+            else{
+                let alertController = UIAlertController(
+                    title: "Sign Up Not Successful", message: "eMail entered not valid", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(
+                    title: "OK", style: .default, handler: nil)
+                alertController.addAction(defaultAction)
+                present(alertController, animated: true, completion: nil)
+            }
+        } else {
+            let alertController = UIAlertController(
+                title: "Sign Up Not Successful", message: "User already registered with eMail entered", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(
+                title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
+        }
     }
-    */
-
 }
