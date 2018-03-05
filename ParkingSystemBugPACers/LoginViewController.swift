@@ -39,14 +39,25 @@ class LoginViewController: UIViewController {
         self.present(newViewController, animated: true, completion: nil)
     }
     
+    // Remember Me Code
     @IBAction func signIn(_ sender: UIButton) {
         userInfoEntered.eMail = userEMail.text
         userInfoEntered.password = userPassword.text
         for i in userDatabase{
             if userInfoEntered.eMail == i.eMail && userInfoEntered.password == i.password{
-                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                let newViewController = storyBoard.instantiateViewController(withIdentifier: "homeNavigate")
-                self.present(newViewController, animated: true, completion: nil)
+                if(rememberMe.isOn){
+                    userEMail.text = userInfoEntered.eMail
+                    userPassword.text = userInfoEntered.password
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "homeNavigate")
+                    self.present(newViewController, animated: true, completion: nil)
+                } else{
+                    userEMail.text = nil
+                    userPassword.text = nil
+                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "homeNavigate")
+                    self.present(newViewController, animated: true, completion: nil)
+                }
             } else {
                 let alertController = UIAlertController(
                     title: "Details Issue", message: "Either this eMail not registered or password is wrong", preferredStyle: .alert)
