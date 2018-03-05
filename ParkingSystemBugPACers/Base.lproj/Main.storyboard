@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Code Controller View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParkingSystemBugPACers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="codeController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="CodeControllerViewController" customModule="ParkingSystemBugPACers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,14 +22,87 @@
                                 <rect key="frame" x="121" y="49" width="133" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recovery E-Mail" textAlignment="justified" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="AQH-MX-7yc">
+                                <rect key="frame" x="68" y="215" width="239" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ur0-nD-Tln">
+                                <rect key="frame" x="68" y="263" width="239" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4390542805" green="0.74905568359999997" blue="0.30583733320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Continue to Change Password">
+                                    <color key="titleColor" red="0.90188163519999998" green="0.90201145410000005" blue="0.90185326340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueToChangePassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wk4-zG-9oB"/>
+                                    <action selector="recoverEMail:" destination="IUV-4g-rA2" eventType="touchUpInside" id="Z0I-tH-XeO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9018816351890564" green="0.9020114541053772" blue="0.90185326337814331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="codeEntered" destination="AQH-MX-7yc" id="9vO-rb-7La"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1751" y="-786"/>
+            <point key="canvasLocation" x="188" y="-62.518740629685162"/>
+        </scene>
+        <!--Password Change View Controller-->
+        <scene sceneID="Men-ku-gcy">
+            <objects>
+                <viewController storyboardIdentifier="passwordChange" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NS0-QY-VP5" customClass="PasswordChangeViewController" customModule="ParkingSystemBugPACers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ybe-Oe-eNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9mQ-vx-PzI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parking-ticket.png" translatesAutoresizingMaskIntoConstraints="NO" id="ovx-8i-M4S">
+                                        <rect key="frame" x="121" y="49" width="133" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recovery E-Mail" textAlignment="justified" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="boR-p3-cCn">
+                                        <rect key="frame" x="68" y="211" width="239" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egO-zG-53l">
+                                        <rect key="frame" x="121" y="259" width="133" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.4390542805" green="0.74905568359999997" blue="0.30583733320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Change Password">
+                                            <color key="titleColor" red="0.90188163519999998" green="0.90201145410000005" blue="0.90185326340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="passwordChange:" destination="NS0-QY-VP5" eventType="touchUpInside" id="AP0-Fu-4ud"/>
+                                            <action selector="recoverEMail:" destination="IUV-4g-rA2" eventType="touchUpInside" id="HbM-BL-taq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90188163519999998" green="0.90201145410000005" blue="0.90185326340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <viewLayoutGuide key="safeArea" id="yXX-ZS-fhg"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aN9-w6-yVe"/>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="boR-p3-cCn" id="Csi-XX-3hQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fyE-Gw-sDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="-58"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="WJf-kQ-jcW">
@@ -54,6 +127,9 @@
                                         <state key="normal" title="SIGN UP">
                                             <color key="titleColor" red="0.90188163519999998" green="0.90201145410000005" blue="0.90185326340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signUp:" destination="XCB-ZV-yuV" eventType="touchUpInside" id="jIh-b9-o3A"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already a user? Sign in instead" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cal-Nl-htV">
                                         <rect key="frame" x="63" y="426" width="248" height="33"/>
@@ -102,6 +178,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hfw-wb-yV5"/>
                     </view>
+                    <connections>
+                        <outlet property="eMailEntered" destination="K3B-17-SrU" id="1Mh-mr-gRd"/>
+                        <outlet property="fullName" destination="ilW-f8-PRD" id="sje-GJ-XHN"/>
+                        <outlet property="passwordEntered" destination="Lza-cI-PCo" id="eoW-Tr-zQY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="20l-c2-mtV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,6 +264,11 @@
                         <color key="backgroundColor" red="0.90188163519999998" green="0.90201145410000005" blue="0.90185326340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Mm9-xl-gJJ"/>
                     </view>
+                    <connections>
+                        <outlet property="rememberMe" destination="ych-JM-oYx" id="Fip-y6-9vE"/>
+                        <outlet property="userEMail" destination="z7o-iw-iXt" id="R9C-do-Sg9"/>
+                        <outlet property="userPassword" destination="hY2-fz-Scs" id="WuS-id-Ug8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5MQ-k7-i7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bXV-PN-woa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="-62"/>
+            <point key="canvasLocation" x="2518" y="-98"/>
         </scene>
         <!--Recovery View Controller-->
         <scene sceneID="5CA-cZ-VgI">
@@ -221,14 +307,14 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Recovery E-Mail" textAlignment="justified" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="HtI-mL-wrr">
-                                        <rect key="frame" x="68" y="205" width="239" height="30"/>
+                                        <rect key="frame" x="68" y="215" width="239" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTJ-rp-DdV">
-                                        <rect key="frame" x="121" y="253" width="133" height="30"/>
+                                        <rect key="frame" x="121" y="263" width="133" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.4390542805" green="0.74905568359999997" blue="0.30583733320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Recover Password">
@@ -246,6 +332,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wDB-Yn-bYy"/>
                     </view>
+                    <connections>
+                        <outlet property="eMailEntered" destination="HtI-mL-wrr" id="mCe-TL-4p2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwj-gB-2uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,7 +356,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jU-pl-tdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188" y="-62"/>
+            <point key="canvasLocation" x="1750" y="-98"/>
         </scene>
     </scenes>
     <resources>
