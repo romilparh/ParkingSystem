@@ -313,11 +313,30 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBA-oj-aNd">
+                                        <rect key="frame" x="121" y="361" width="133" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.9018816351890564" green="0.9020114541053772" blue="0.90185326337814331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.43905428051948547" green="0.74905568361282349" blue="0.30583733320236206" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gotoLogin:" destination="IUV-4g-rA2" eventType="touchUpInside" id="yoq-hd-3AJ"/>
+                                            <action selector="recoverEMail:" destination="IUV-4g-rA2" eventType="touchUpInside" id="Ssd-Ec-l9I"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remembered the password?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdJ-a6-1iV">
+                                        <rect key="frame" x="63" y="320" width="248" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTJ-rp-DdV">
-                                        <rect key="frame" x="121" y="263" width="133" height="30"/>
+                                        <rect key="frame" x="88" y="263" width="198" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.4390542805" green="0.74905568359999997" blue="0.30583733320000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Recover Password">
+                                        <state key="normal" title="Send Recovery eMail">
                                             <color key="titleColor" red="0.90188163519999998" green="0.90201145410000005" blue="0.90185326340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -338,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rwj-gB-2uK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="-61"/>
+            <point key="canvasLocation" x="-567.20000000000005" y="-61.619190404797607"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dBr-Oz-hWl">

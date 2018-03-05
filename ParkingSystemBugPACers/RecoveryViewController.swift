@@ -39,6 +39,12 @@ class RecoveryViewController: UIViewController, MFMailComposeViewControllerDeleg
         controller.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func gotoLogin(_ sender: UIButton) {
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
     @IBAction func recoverEMail(_ sender: UIButton) {
         let randomNo: Int = Int(arc4random_uniform(8999))
         print(randomNo)
