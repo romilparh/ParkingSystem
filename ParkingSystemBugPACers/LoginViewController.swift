@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        userDatabase.append(UserInfo())
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,7 +41,13 @@ class LoginViewController: UIViewController {
         self.present(newViewController, animated: true, completion: nil)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
+    
     // Remember Me Code
+    // Persistent storage through userdefault objects
     @IBAction func signIn(_ sender: UIButton) {
         userInfoEntered.eMail = userEMail.text
         userInfoEntered.password = userPassword.text

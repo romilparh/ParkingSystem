@@ -15,8 +15,8 @@ class HomeScreenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let newBtn = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(btnMenuAction))
-        self.navigationItem.leftBarButtonItem = newBtn 
+        //let newBtn = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(btnMenuAction))
+        //self.navigationItem.leftBarButtonItem = newBtn
         sidebarView = SidebarView(frame: CGRect(x: 0, y: 0, width: 0, height: self.view.frame.height))
         sidebarView.delegate = self
         sidebarView.layer.zPosition=100
@@ -34,9 +34,9 @@ class HomeScreenViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-      //  var image = UIImage(named: "Navigation.png")
-      //  image = image?.withRenderingMode(.alwaysOriginal)
-      //  self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: nil, action: nil)
+        var image = UIImage(named: "menu-button.png")
+        image = image?.withRenderingMode(.alwaysOriginal)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: self, action: #selector(btnMenuAction))
         }
     
     @objc func btnMenuAction() {

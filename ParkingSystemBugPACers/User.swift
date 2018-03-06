@@ -43,3 +43,5 @@ class UserInfo{
 }
 
 var userDatabase = [UserInfo]()
+// email as primary key
+
