@@ -9,27 +9,18 @@
 import UIKit
 
 class AddTicketViewController: UIViewController {
-
+    
+    @IBOutlet weak var labelDate: UILabel!
+    var parkingTicket = ParkingTicket()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        let date = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let dateString = dateFormatter.string(from:date as Date)
+        labelDate.text = dateString
 
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

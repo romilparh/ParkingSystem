@@ -59,6 +59,7 @@ class RecoveryViewController: UIViewController, MFMailComposeViewControllerDeleg
                 sendEmail()
                 let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                 let newViewController = storyBoard.instantiateViewController(withIdentifier: "codeController")
+                // newViewController.codePassed = recoveryGrid
                 self.present(newViewController, animated: true, completion: nil)
             }
             else {

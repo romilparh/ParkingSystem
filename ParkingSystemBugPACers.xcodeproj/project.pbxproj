@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		183AD6A9204E18790050C587 /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6A8204E18790050C587 /* menu-button.png */; };
-		1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1892D2DC204C46DB0037AE9F /* Navigation.png */; };
+		183AD6B3205177FB0050C587 /* ParkingTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183AD6B2205177FB0050C587 /* ParkingTicket.swift */; };
+		183AD6B7205185E80050C587 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6B6205185E80050C587 /* plus.png */; };
+		183AD6B92051866F0050C587 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6B82051866E0050C587 /* menu.png */; };
+		183AD6BB205186AF0050C587 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6BA205186AE0050C587 /* logout.png */; };
+		183AD6BD2051ADDA0050C587 /* AddTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183AD6BC2051ADDA0050C587 /* AddTicketViewController.swift */; };
 		1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */; };
 		1892D2E3204C62080037AE9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E2204C62080037AE9F /* LoginViewController.swift */; };
 		1892D2E5204C62890037AE9F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E4204C62890037AE9F /* SignUpViewController.swift */; };
@@ -29,8 +32,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		183AD6A8204E18790050C587 /* menu-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button.png"; sourceTree = "<group>"; };
-		1892D2DC204C46DB0037AE9F /* Navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigation.png; sourceTree = "<group>"; };
+		183AD6B2205177FB0050C587 /* ParkingTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTicket.swift; sourceTree = "<group>"; };
+		183AD6B6205185E80050C587 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		183AD6B82051866E0050C587 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		183AD6BA205186AE0050C587 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		183AD6BC2051ADDA0050C587 /* AddTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketViewController.swift; sourceTree = "<group>"; };
 		1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		1892D2E2204C62080037AE9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1892D2E4204C62890037AE9F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +86,8 @@
 				1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */,
 				18ECE063204C411D00EC792F /* SideBarView.swift */,
 				18ECE046204C265E00EC792F /* Main.storyboard */,
+				183AD6BC2051ADDA0050C587 /* AddTicketViewController.swift */,
+				183AD6B2205177FB0050C587 /* ParkingTicket.swift */,
 				1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */,
 				1892D2E8204C7DA80037AE9F /* User.swift */,
 				1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */,
@@ -97,8 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				18ECE055204C271000EC792F /* parking-ticket.png */,
-				183AD6A8204E18790050C587 /* menu-button.png */,
-				1892D2DC204C46DB0037AE9F /* Navigation.png */,
+				183AD6B82051866E0050C587 /* menu.png */,
+				183AD6BA205186AE0050C587 /* logout.png */,
+				183AD6B6205185E80050C587 /* plus.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -170,13 +179,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183AD6A9204E18790050C587 /* menu-button.png in Resources */,
 				18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */,
-				1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */,
+				183AD6BB205186AF0050C587 /* logout.png in Resources */,
 				18ECE04D204C265E00EC792F /* LaunchScreen.storyboard in Resources */,
+				183AD6B7205185E80050C587 /* plus.png in Resources */,
 				18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */,
 				18ECE04A204C265E00EC792F /* Assets.xcassets in Resources */,
 				18ECE056204C271000EC792F /* parking-ticket.png in Resources */,
+				183AD6B92051866F0050C587 /* menu.png in Resources */,
 				18ECE048204C265E00EC792F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,11 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1892D2E3204C62080037AE9F /* LoginViewController.swift in Sources */,
+				183AD6BD2051ADDA0050C587 /* AddTicketViewController.swift in Sources */,
 				1892D2E5204C62890037AE9F /* SignUpViewController.swift in Sources */,
 				1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */,
 				18ECE064204C411D00EC792F /* SideBarView.swift in Sources */,
 				18ECE066204C43DA00EC792F /* HomeScreenViewController.swift in Sources */,
 				1892D2E9204C7DA80037AE9F /* User.swift in Sources */,
+				183AD6B3205177FB0050C587 /* ParkingTicket.swift in Sources */,
 				1892D2E7204C658E0037AE9F /* RecoveryViewController.swift in Sources */,
 				1892D2ED204CCFB60037AE9F /* CodeControllerViewController.swift in Sources */,
 				1892D2EF204CD08D0037AE9F /* PasswordChangeViewController.swift in Sources */,

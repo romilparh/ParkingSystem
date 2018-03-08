@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeScreenViewController: UIViewController {
-
+    
     var sidebarView: SidebarView!
     var blackScreen: UIView!
     
@@ -17,14 +17,15 @@ class HomeScreenViewController: UIViewController {
         super.viewDidLoad()
         //let newBtn = UIBarButtonItem(title: "Menu", style: .plain, target: self, action: #selector(btnMenuAction))
         //self.navigationItem.leftBarButtonItem = newBtn
+        
+        // Side Bar View
         sidebarView = SidebarView(frame: CGRect(x: 0, y: 0, width: 0, height: self.view.frame.height))
         sidebarView.delegate = self
         sidebarView.layer.zPosition=100
         self.view.isUserInteractionEnabled=true
         self.navigationController?.view.addSubview(sidebarView)
-        
         blackScreen=UIView(frame: self.view.bounds)
-        blackScreen.backgroundColor=UIColor(white: 0, alpha: 0.3)
+        blackScreen.backgroundColor=UIColor(white: 0, alpha: 0.6)
         blackScreen.isHidden=true
         self.navigationController?.view.addSubview(blackScreen)
         blackScreen.layer.zPosition=99
@@ -34,9 +35,12 @@ class HomeScreenViewController: UIViewController {
     }
 
     override func viewDidAppear(_ animated: Bool) {
-        var image = UIImage(named: "menu-button.png")
+        var image = UIImage(named: "menu.png")
         image = image?.withRenderingMode(.alwaysOriginal)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style:.plain, target: self, action: #selector(btnMenuAction))
+        var image2 = UIImage(named: "logout.png")
+        image2 = image2?.withRenderingMode(.alwaysOriginal)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image2, style:.plain, target: self, action: #selector(btnLogoutAction))
         }
     
     @objc func btnMenuAction() {
@@ -48,6 +52,11 @@ class HomeScreenViewController: UIViewController {
         }
     }
     
+    @objc func btnLogoutAction(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
+        self.present(newViewController, animated: true, completion: nil)
+    }
     @objc func blackScreenTapAction(sender: UITapGestureRecognizer) {
         blackScreen.isHidden=true
         blackScreen.frame=self.view.bounds

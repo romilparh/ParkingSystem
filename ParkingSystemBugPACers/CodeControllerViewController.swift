@@ -8,13 +8,16 @@
 
 import UIKit
 
+// Pass the object, not the value, it needs objects
+
 class CodeControllerViewController: UIViewController {
 
     @IBOutlet weak var codeEntered: UITextField!
+    var codePassed: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -32,3 +35,4 @@ class CodeControllerViewController: UIViewController {
         // if passed code is equal to emailed, continue
     }
 }
+
