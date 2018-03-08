@@ -13,8 +13,6 @@ class UserInfo{
     var eMail: String!
     var password: String!
     
-    var parkingTickets = [ParkingTicket]()
-    
     init(){
         self.fullName = ""
         self.eMail = ""
