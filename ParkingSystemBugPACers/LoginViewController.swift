@@ -19,15 +19,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        userDatabase.append(UserInfo())
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+        userDatabase.append(UserInfo("Romil","romilparhwal007@gmail.com","Romil123!")) // username, email, password
+        userDatabase.append(UserInfo("Pritish","pritishpatel@gmail.com","PritishPatel"))
+        userDatabase.append(UserInfo("Jagdeep","jagdeep9417@gmail.com","Jagdeep"))
+    } 
 
     @IBAction func signUp(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
