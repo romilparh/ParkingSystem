@@ -1,7 +1,7 @@
 What is not working?
 
-Remember Me
-Instructions View
+Remember Me: Values stored in object, still don't know why it is not working
+Instructions View: Giving File Read Error
 
 What is dumped? 
 Location View
