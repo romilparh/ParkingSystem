@@ -76,11 +76,11 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
 
             let cellImg: UIImageView!
             cellImg = UIImageView(frame: CGRect(x: 15, y: 10, width: 80, height: 80))
-            cellImg.layer.cornerRadius = 40
+            //cellImg.layer.cornerRadius = 40
             cellImg.layer.masksToBounds=true
             cellImg.contentMode = .scaleAspectFill
             cellImg.layer.masksToBounds=true
-            cellImg.image = UIImage(named: "Navigation.png")
+            cellImg.image = UIImage(named: "user.png")
             cell.addSubview(cellImg)
             
             let cellLbl = UILabel(frame: CGRect(x: 110, y: cell.frame.height/2-15, width: 250, height: 30))
