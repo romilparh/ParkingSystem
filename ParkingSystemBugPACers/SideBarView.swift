@@ -15,8 +15,6 @@ protocol SidebarViewDelegate: class {
 
 enum Row: String {
     case editProfile
-    case addTicket
-    case location
     case contact
     case instruction
     case signOut
@@ -25,11 +23,9 @@ enum Row: String {
     init(row: Int) {
         switch row {
         case 0: self = .editProfile
-        case 1: self = .addTicket
-        case 2: self = .location
-        case 3: self = .contact
-        case 4: self = .instruction
-        case 5: self = .signOut
+        case 1: self = .contact
+        case 2: self = .instruction
+        case 3: self = .signOut
         default: self = .none
         }
     }
@@ -38,6 +34,7 @@ enum Row: String {
 class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     var titleArr = [String]()
+    var userName: String = ""
     
     weak var delegate: SidebarViewDelegate?
     
@@ -46,7 +43,12 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
         self.backgroundColor=UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1.0)
         self.clipsToBounds=true
         
-        titleArr = ["Romil", "Add Ticket", "Location", "Contact Us", "Instructions", "Sign Out"]
+        for i in userDatabase{
+            if i.eMail == userInfoEntered.eMail{
+                userName = i.fullName
+            }
+        }
+        titleArr = ["\(userName)", "Contact Us", "Instructions", "Sign Out"]
         
         setupViews()
         

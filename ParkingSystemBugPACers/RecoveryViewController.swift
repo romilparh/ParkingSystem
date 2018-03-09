@@ -10,11 +10,18 @@ import Foundation
 import UIKit
 import MessageUI
 
+var recoveryGrid: Int = 0
+var eMailEnteredbyUser: String!
+
 class RecoveryViewController: UIViewController, MFMailComposeViewControllerDelegate {
     
     @IBOutlet weak var eMailEntered: UITextField!
     let recoveryInteger: Int = 1000
-    var recoveryGrid: Int = 0
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +31,7 @@ class RecoveryViewController: UIViewController, MFMailComposeViewControllerDeleg
         }
     }
     func sendEmail() {
+        eMailEnteredbyUser = eMailEntered.text
         let composeVC = MFMailComposeViewController()
         composeVC.mailComposeDelegate = self
         // Configure the fields of the interface.
@@ -34,10 +42,13 @@ class RecoveryViewController: UIViewController, MFMailComposeViewControllerDeleg
         self.present(composeVC, animated: true, completion: nil)
     }
     
-    func mailComposeController(controller: MFMailComposeViewController,
-                               didFinishWithResult result: MFMailComposeResult, error: NSError?) {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         controller.dismiss(animated: true, completion: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "codeController")
+        self.present(newViewController, animated: true, completion: nil)
     }
+    
 
     @IBAction func gotoLogin(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -48,8 +59,8 @@ class RecoveryViewController: UIViewController, MFMailComposeViewControllerDeleg
     @IBAction func recoverEMail(_ sender: UIButton) {
         let randomNo: Int = Int(arc4random_uniform(8999))
         print(randomNo)
-        self.recoveryGrid = recoveryInteger + randomNo
-        print(self.recoveryGrid)
+        recoveryGrid = recoveryInteger + randomNo
+        print(recoveryGrid)
         
         for i in userDatabase{
             if(eMailEntered.text == i.eMail){

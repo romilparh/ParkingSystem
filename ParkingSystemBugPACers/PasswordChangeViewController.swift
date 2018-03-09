@@ -16,7 +16,17 @@ class PasswordChangeViewController: UIViewController {
     }
     
     @IBAction func passwordChange(_ sender: UIButton) {
-        // update password in userDatabase array by checking email
-        // want to show alert and on pressing ok, it should navigate to login page
+        for i in userDatabase{
+            if i.eMail == eMailEnteredbyUser{
+                i.password = password.text
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
+                self.present(newViewController, animated: true, completion: nil)
+            }
+        }
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
     }
 }

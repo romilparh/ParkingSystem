@@ -8,6 +8,8 @@
 
 import UIKit
 
+let userInfoEntered = UserInfo()
+
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var userEMail: UITextField!
@@ -15,12 +17,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var rememberMe: UISwitch!
     
-    var userInfoEntered = UserInfo()
-    
+    var loggedIn: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         userDatabase.append(UserInfo("Romil","romilparhwal007@gmail.com","Romil123!")) // username, email, password
-        userDatabase.append(UserInfo("Pritish","pritishpatel@gmail.com","PritishPatel"))
+        userDatabase.append(UserInfo("Gagandeep Brar","gagandeepbrar@gmail.com","gagandeep"))
         userDatabase.append(UserInfo("Jagdeep","jagdeep9417@gmail.com","Jagdeep"))
     } 
 
@@ -54,22 +55,24 @@ class LoginViewController: UIViewController {
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "homeNavigate")
                     self.present(newViewController, animated: true, completion: nil)
+                    loggedIn = true
                 } else{
                     userEMail.text = nil
                     userPassword.text = nil
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let newViewController = storyBoard.instantiateViewController(withIdentifier: "homeNavigate")
                     self.present(newViewController, animated: true, completion: nil)
+                    loggedIn = true
                 }
-            } else {
-                let alertController = UIAlertController(
-                    title: "Details Issue", message: "Either this eMail not registered or password is wrong", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(
-                    title: "OK", style: .default, handler: nil)
-                alertController.addAction(defaultAction)
-                present(alertController, animated: true, completion: nil)
             }
         }
-        
+        if loggedIn == false{
+            let alertController = UIAlertController(
+                title: "Wrong Details", message: "Wrong Password or EMail not registered", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(
+                title: "OK", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+            present(alertController, animated: true, completion: nil)
+        }
     }
 }
