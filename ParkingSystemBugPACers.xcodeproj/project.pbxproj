@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = 1892D2DC204C46DB0037AE9F /* Navigation.png */; };
-		1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */; };
+		1834DEF920520BF8008F8E84 /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = 1834DEF820520BF8008F8E84 /* save.png */; };
+		1834DEFB20520DEC008F8E84 /* automobile.png in Resources */ = {isa = PBXBuildFile; fileRef = 1834DEFA20520DEC008F8E84 /* automobile.png */; };
+		183AD6B3205177FB0050C587 /* ParkingTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183AD6B2205177FB0050C587 /* ParkingTicket.swift */; };
+		183AD6B7205185E80050C587 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6B6205185E80050C587 /* plus.png */; };
+		183AD6B92051866F0050C587 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6B82051866E0050C587 /* menu.png */; };
+		183AD6BB205186AF0050C587 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 183AD6BA205186AE0050C587 /* logout.png */; };
+		183AD6BD2051ADDA0050C587 /* AddTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183AD6BC2051ADDA0050C587 /* AddTicketViewController.swift */; };
+		1865CFBC2052E279001289EF /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1865CFBB2052E279001289EF /* WebViewController.swift */; };
+		1865CFBE2052E55A001289EF /* instructions.html in Resources */ = {isa = PBXBuildFile; fileRef = 1865CFBD2052E55A001289EF /* instructions.html */; };
+		1865CFC02052E8C0001289EF /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865CFBF2052E8C0001289EF /* home.png */; };
 		1892D2E3204C62080037AE9F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E2204C62080037AE9F /* LoginViewController.swift */; };
 		1892D2E5204C62890037AE9F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E4204C62890037AE9F /* SignUpViewController.swift */; };
 		1892D2E7204C658E0037AE9F /* RecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */; };
 		1892D2E9204C7DA80037AE9F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2E8204C7DA80037AE9F /* User.swift */; };
 		1892D2ED204CCFB60037AE9F /* CodeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2EC204CCFB60037AE9F /* CodeControllerViewController.swift */; };
 		1892D2EF204CD08D0037AE9F /* PasswordChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */; };
+		18DC395120523757006CCF37 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DC395020523757006CCF37 /* EditProfileViewController.swift */; };
 		18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE042204C265E00EC792F /* AppDelegate.swift */; };
 		18ECE045204C265E00EC792F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ECE044204C265E00EC792F /* ViewController.swift */; };
 		18ECE048204C265E00EC792F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ECE046204C265E00EC792F /* Main.storyboard */; };
@@ -28,14 +37,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1892D2DC204C46DB0037AE9F /* Navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Navigation.png; sourceTree = "<group>"; };
-		1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		1834DEF820520BF8008F8E84 /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		1834DEFA20520DEC008F8E84 /* automobile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = automobile.png; sourceTree = "<group>"; };
+		183AD6B2205177FB0050C587 /* ParkingTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingTicket.swift; sourceTree = "<group>"; };
+		183AD6B6205185E80050C587 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		183AD6B82051866E0050C587 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		183AD6BA205186AE0050C587 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
+		183AD6BC2051ADDA0050C587 /* AddTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTicketViewController.swift; sourceTree = "<group>"; };
+		1865CFBB2052E279001289EF /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		1865CFBD2052E55A001289EF /* instructions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = instructions.html; sourceTree = "<group>"; };
+		1865CFBF2052E8C0001289EF /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		1892D2E2204C62080037AE9F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1892D2E4204C62890037AE9F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryViewController.swift; sourceTree = "<group>"; };
 		1892D2E8204C7DA80037AE9F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1892D2EC204CCFB60037AE9F /* CodeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeControllerViewController.swift; sourceTree = "<group>"; };
 		1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordChangeViewController.swift; sourceTree = "<group>"; };
+		18DC395020523757006CCF37 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		18ECE03F204C265E00EC792F /* ParkingSystemBugPACers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkingSystemBugPACers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ECE042204C265E00EC792F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ECE044204C265E00EC792F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,15 +93,19 @@
 				18ECE042204C265E00EC792F /* AppDelegate.swift */,
 				18ECE044204C265E00EC792F /* ViewController.swift */,
 				18ECE065204C43DA00EC792F /* HomeScreenViewController.swift */,
-				1892D2E0204C5AC80037AE9F /* EditProfileVC.swift */,
 				18ECE063204C411D00EC792F /* SideBarView.swift */,
 				18ECE046204C265E00EC792F /* Main.storyboard */,
+				1865CFBB2052E279001289EF /* WebViewController.swift */,
+				18DC395020523757006CCF37 /* EditProfileViewController.swift */,
+				183AD6BC2051ADDA0050C587 /* AddTicketViewController.swift */,
+				183AD6B2205177FB0050C587 /* ParkingTicket.swift */,
 				1892D2EE204CD08D0037AE9F /* PasswordChangeViewController.swift */,
 				1892D2E8204C7DA80037AE9F /* User.swift */,
 				1892D2E6204C658E0037AE9F /* RecoveryViewController.swift */,
 				1892D2EC204CCFB60037AE9F /* CodeControllerViewController.swift */,
 				1892D2E2204C62080037AE9F /* LoginViewController.swift */,
 				1892D2E4204C62890037AE9F /* SignUpViewController.swift */,
+				1865CFBD2052E55A001289EF /* instructions.html */,
 				18ECE049204C265E00EC792F /* Assets.xcassets */,
 				18ECE04B204C265E00EC792F /* LaunchScreen.storyboard */,
 				18ECE04E204C265E00EC792F /* Info.plist */,
@@ -94,8 +116,13 @@
 		18ECE054204C26FB00EC792F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1865CFBF2052E8C0001289EF /* home.png */,
+				1834DEF820520BF8008F8E84 /* save.png */,
 				18ECE055204C271000EC792F /* parking-ticket.png */,
-				1892D2DC204C46DB0037AE9F /* Navigation.png */,
+				183AD6B82051866E0050C587 /* menu.png */,
+				1834DEFA20520DEC008F8E84 /* automobile.png */,
+				183AD6BA205186AE0050C587 /* logout.png */,
+				183AD6B6205185E80050C587 /* plus.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -168,12 +195,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				18ECE059204C29DF00EC792F /* BEYNO.otf in Resources */,
-				1892D2DD204C46DC0037AE9F /* Navigation.png in Resources */,
+				1865CFBE2052E55A001289EF /* instructions.html in Resources */,
+				183AD6BB205186AF0050C587 /* logout.png in Resources */,
 				18ECE04D204C265E00EC792F /* LaunchScreen.storyboard in Resources */,
+				1834DEFB20520DEC008F8E84 /* automobile.png in Resources */,
+				183AD6B7205185E80050C587 /* plus.png in Resources */,
 				18ECE05B204C2B4600EC792F /* BEYNO.ttf in Resources */,
 				18ECE04A204C265E00EC792F /* Assets.xcassets in Resources */,
 				18ECE056204C271000EC792F /* parking-ticket.png in Resources */,
+				183AD6B92051866F0050C587 /* menu.png in Resources */,
+				1865CFC02052E8C0001289EF /* home.png in Resources */,
 				18ECE048204C265E00EC792F /* Main.storyboard in Resources */,
+				1834DEF920520BF8008F8E84 /* save.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,15 +217,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DC395120523757006CCF37 /* EditProfileViewController.swift in Sources */,
 				1892D2E3204C62080037AE9F /* LoginViewController.swift in Sources */,
+				183AD6BD2051ADDA0050C587 /* AddTicketViewController.swift in Sources */,
 				1892D2E5204C62890037AE9F /* SignUpViewController.swift in Sources */,
-				1892D2E1204C5AC80037AE9F /* EditProfileVC.swift in Sources */,
 				18ECE064204C411D00EC792F /* SideBarView.swift in Sources */,
 				18ECE066204C43DA00EC792F /* HomeScreenViewController.swift in Sources */,
 				1892D2E9204C7DA80037AE9F /* User.swift in Sources */,
+				183AD6B3205177FB0050C587 /* ParkingTicket.swift in Sources */,
 				1892D2E7204C658E0037AE9F /* RecoveryViewController.swift in Sources */,
 				1892D2ED204CCFB60037AE9F /* CodeControllerViewController.swift in Sources */,
 				1892D2EF204CD08D0037AE9F /* PasswordChangeViewController.swift in Sources */,
+				1865CFBC2052E279001289EF /* WebViewController.swift in Sources */,
 				18ECE045204C265E00EC792F /* ViewController.swift in Sources */,
 				18ECE043204C265E00EC792F /* AppDelegate.swift in Sources */,
 			);

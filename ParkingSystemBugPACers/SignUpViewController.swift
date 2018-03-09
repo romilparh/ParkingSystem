@@ -18,12 +18,18 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func loginPressed(_ sender: UIButton) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
         self.present(newViewController, animated: true, completion: nil)
     }
     
+    // Transit to login after pressing OK on alert
     @IBAction func signUp(_ sender: UIButton) {
         let userInfoEntered = UserInfo()
         for i in userDatabase{
@@ -35,6 +41,9 @@ class SignUpViewController: UIViewController {
             let eMailCheck: Bool = userInfoEntered.addUser(fullName.text!, eMailEntered.text!, passwordEntered.text!)
             if (eMailCheck == true){
                 userDatabase.append(userInfoEntered)
+                let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginView")
+                self.present(newViewController, animated: true, completion: nil)
                 let alertController = UIAlertController(
                     title: "Sign Up Successful", message: "You may now login", preferredStyle: .alert)
                 let defaultAction = UIAlertAction(

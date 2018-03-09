@@ -15,19 +15,17 @@ protocol SidebarViewDelegate: class {
 
 enum Row: String {
     case editProfile
-    case addTicket
-    case location
     case contact
+    case instruction
     case signOut
     case none
     
     init(row: Int) {
         switch row {
         case 0: self = .editProfile
-        case 1: self = .addTicket
-        case 2: self = .location
-        case 3: self = .contact
-        case 4: self = .signOut
+        case 1: self = .contact
+        case 2: self = .instruction
+        case 3: self = .signOut
         default: self = .none
         }
     }
@@ -36,15 +34,21 @@ enum Row: String {
 class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
     
     var titleArr = [String]()
+    var userName: String = ""
     
     weak var delegate: SidebarViewDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor=UIColor(red: 54/255, green: 55/255, blue: 56/255, alpha: 1.0)
+        self.backgroundColor=UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1.0)
         self.clipsToBounds=true
         
-        titleArr = ["Romil", "Add Ticket", "Location", "Contact Us", "Sign Out"]
+        for i in userDatabase{
+            if i.eMail == userInfoEntered.eMail{
+                userName = i.fullName
+            }
+        }
+        titleArr = ["\(userName)", "Contact Us", "Instructions", "Sign Out"]
         
         setupViews()
         
@@ -52,13 +56,13 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
         myTableView.dataSource=self
         myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         myTableView.tableFooterView=UIView()
-        myTableView.separatorStyle = UITableViewCellSeparatorStyle.none
+        myTableView.separatorStyle = UITableViewCellSeparatorStyle.singleLine
         myTableView.allowsSelection = true
         myTableView.bounces=false
         myTableView.showsVerticalScrollIndicator=false
         myTableView.backgroundColor = UIColor.clear
     }
-    
+    // (red: 112/255, green: 191/255, blue: 78/255, alpha: 1.0)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return titleArr.count
     }
@@ -68,7 +72,8 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
         cell.backgroundColor = .clear
         cell.selectionStyle = .none
         if indexPath.row == 0 {
-            cell.backgroundColor=UIColor(red: 77/255, green: 77/255, blue: 77/255, alpha: 1.0)
+            cell.backgroundColor=UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1.0)
+
             let cellImg: UIImageView!
             cellImg = UIImageView(frame: CGRect(x: 15, y: 10, width: 80, height: 80))
             cellImg.layer.cornerRadius = 40
@@ -82,10 +87,10 @@ class SidebarView: UIView, UITableViewDelegate, UITableViewDataSource {
             cell.addSubview(cellLbl)
             cellLbl.text = titleArr[indexPath.row]
             cellLbl.font=UIFont.systemFont(ofSize: 17)
-            cellLbl.textColor=UIColor.white
+            cellLbl.textColor=UIColor.darkGray
         } else {
             cell.textLabel?.text=titleArr[indexPath.row]
-            cell.textLabel?.textColor=UIColor.white
+            cell.textLabel?.textColor=UIColor.darkGray
         }
         return cell
     }

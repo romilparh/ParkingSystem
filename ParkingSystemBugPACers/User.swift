@@ -13,13 +13,17 @@ class UserInfo{
     var eMail: String!
     var password: String!
     
-    
     init(){
         self.fullName = ""
         self.eMail = ""
         self.password = ""
     }
     
+    init(_ userName: String,_ eMail: String,_ passwordEntered: String){
+        self.fullName = userName
+        self.eMail = eMail
+        self.password = passwordEntered
+    }
     func addUser(_ userName: String,_ eMail: String,_ passwordEntered: String) -> Bool{
         if(isValidEmail(eMail)){
             self.fullName = userName
@@ -38,8 +42,9 @@ class UserInfo{
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
-    
-    
+
 }
 
 var userDatabase = [UserInfo]()
+// email as primary key
+

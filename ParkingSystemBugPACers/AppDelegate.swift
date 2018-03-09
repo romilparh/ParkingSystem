@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        let nav = UINavigationBar.appearance()
+        nav.tintColor = uicolorFromHex(rgbValue: 0x70BF4E)
+        //nav.barTintColor = UIColor.red
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
         return true
     }
     func applicationWillResignActive(_ application: UIApplication) {
@@ -39,6 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func uicolorFromHex(rgbValue:UInt32) ->UIColor
+    {
+        let red = CFloat((rgbValue & 0xFF0000) >> 16)/256.0
+        let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+        let blue = CGFloat(rgbValue & 0xFF)/256.0
+        return UIColor(red:CGFloat(red), green:green, blue:blue, alpha:1.0)
+        
+    }
 }
 
